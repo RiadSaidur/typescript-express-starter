@@ -1,11 +1,11 @@
 {
-  "name": "zonaeds",
+  "name": "express-ts-starter",
   "version": "1.0.0",
-  "description": "backend for Zonadeds ecommerce",
+  "description": "A Node-ExpressJS starter project",
   "main": "dist/index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts",
-    "start:nodemon": "node ./node_modules/nodemon/bin/nodemon.js",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js",
     "start:prod": "npm run build && node ./dist/src/index.js",
     "build": "npx tsc"
   },
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
     "@types/node": "^17.0.10",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0",
